@@ -1,31 +1,28 @@
-# OpenGameLauncher v1.0
+OpenGameLauncher v1.0
 
-Launcher open source pour jeux installés localement, avec profils multiples et sauvegardes persistantes.
+Open-source launcher for locally installed games, with multiple profiles and persistent save backups.
 
-## V0.1 → V1.0
-- V0.1 : bibliothèque, ajout d'un `.exe`, lancement.
-- V0.2 : profils, favoris, recherche, temps de jeu.
-- V0.3 : sauvegardes ZIP persistantes, restauration après réinstallation.
-- V0.4 : édition des jeux, arguments, dossiers d'installation.
-- V0.5 : import/export de bibliothèque.
-- V0.6 : statistiques et historique.
-- V0.7 : thèmes clair/sombre, paramètres.
-- V0.8 : détection de bibliothèques Steam/Epic quand disponibles.
-- V0.9 : logs, validation des chemins, nettoyage des backups.
-- V1.0 : interface stable, export/import, backups indépendants des installations.
+V0.1 → V1.0
+V0.1: library, .exe addition, launching.
+V0.2: profiles, favorites, search, playtime tracking.
+V0.3: persistent ZIP save backups, restoration after reinstallation.
+V0.4: game editing, launch arguments, installation directories.
+V0.5: library import/export.
+V0.6: statistics and history.
+V0.7: light/dark themes, settings.
+V0.8: Steam/Epic library detection when available.
+V0.9: logs, path validation, backup cleanup.
+V1.0: stable interface, import/export, backups independent from game installations.
+Running
 
-## Lancer
-Windows 10/11 recommandé. Python 3.11+.
+Windows 10/11 recommended. Python 3.11+.
 
-```powershell
 py -m pip install -r requirements.txt
 py main.py
-```
 
-Pour créer un `.exe` :
-```powershell
+To create an .exe:
+
 py -m pip install pyinstaller
 pyinstaller --noconsole --onefile --name OpenGameLauncher main.py
-```
 
-Le launcher ne fournit aucun jeu et ne contourne aucune licence, DRM ou protection. Il lance seulement les programmes locaux configurés par l'utilisateur.
+The launcher does not provide any games and does not bypass any license, DRM, or protection. It only launches local programs configured by the user.
